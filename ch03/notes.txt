@@ -15,4 +15,27 @@ Fetch names out of a module with
     >>> title
     'The Meaning of Life'
 
-'from' copies a module's attributes.
+'from' copies a module's attributes
+
+
+dir() list attributes and methods of any object.
+
+    Each modules is a package of variables -> namespace
+    and each module is a self-contained namespace.
+    (!) names in one file cannot clash with those in another even if they are spelled the same way.
+    'from' statements however can cause variables to be overwritten, so use import almost always
+
+$ Import and reload:
+
+    reload: user parentheses, gets current version of code.
+
+ $ Using exec to Run Module Files:
+
+    exec(open('module.py').read())
+    - way to launch files from interactive prompt without having to import & reload.
+    - runs current version of a file.
+
+    (!) Can silently overwrite variables currently being used.
+        If module being executed is being essentially pasted to the script running
+        the exec function, it could overwrite variables with the same name.
+
