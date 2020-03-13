@@ -1,0 +1,18 @@
+
+Using dot expression to fetch attribute of any object:
+    Syntax: object.attribute
+
+    >>> import script1
+    >>> script1.title
+    'The Meaning of Life'
+
+
+Fetch names out of a module with
+'from' statements:
+    Syntax: from object import attribute
+
+    >>> from script1 import title
+    >>> title
+    'The Meaning of Life'
+
+'from' copies a module's attributes.
